@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+    <link rel="stylesheet" href="qazanamaz.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="form-box">
+            <h1>Qaza Namaz</h1>
+            <input type="number" id="totalAge" >
+            <br>
+            <h2>Calculate</h2>
+            <button onclick="
+            let ageOfPerson = document.getElementById('totalAge').value;
+            let qazaNamaz = ageOfPerson - 12;
+            let totalQazaNamaz = qazaNamaz*365*5;
+                document.getElementById('heading').innerText =totalQazaNamaz;">
+                Click Here</button>
+            <h3>Your Qaza Namaz is</h3>
+            <h4 id="heading">0</h4>
+
+
+            
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

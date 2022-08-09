@@ -1,0 +1,289 @@
+html{
+    scroll-behavior: smooth;}
+    *{
+        padding: 0; margin: 0; box-sizing: border-box;
+    }
+    body{
+        background: #0a3d62; font-family: 'Nunito', sans-serif;
+    }
+header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align:center;
+    
+}
+
+header img{
+    width: 10rem;
+    height: auto;
+    border-radius:50%;
+    animation: pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+header h3{
+    color: white;
+    margin: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:2.3rem;
+}
+
+header p{
+    color:yellow;
+    font-size: 1.5rem;
+}
+
+.arrow{
+    color: white;
+    margin-top: 3rem;
+    font-size: 5rem;
+    animation: arrow 2s ease-in-out infinite;
+}
+
+@keyframes arrow{
+    0%{color: #3c6382;}
+    50%{color: #0a3d62;}
+    100%{color: #3c6382;}
+    
+}
+
+.container{
+    width: 100%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 0.8fr 0.2fr ;
+gap: 1rem;
+grid-template-areas: "profile profile skills skills"
+                    "education education education language"
+                    "contact experience experience experience"
+                    "footer footer footer footer";
+padding: 2rem;
+}
+
+.profile{
+    background: white;
+    color: black;
+    padding: 2rem;
+    grid-area: profile;
+    
+}
+
+.skills{
+    background: #3c6382;
+    color: white;
+    padding: 2rem;
+    grid-area: skills ;
+   
+}
+
+.education{
+    background: #3c6382;
+    color: white;
+    padding: 2rem;
+    grid-area: education ;
+  
+}
+
+.aboutMe{
+    background: white;
+    color: #0a3d62;
+    padding: 2rem;
+    grid-area: language ;
+}
+
+.contact{
+    background: white;
+    color: #0a3d62;
+    padding: 2rem;
+    grid-area: contact ;
+}
+
+.experience{
+    background: #3c6382;
+    color: white;
+    padding: 2rem;
+    grid-area:experience ;
+}
+
+.box-container{
+    display: flex;
+ 
+   
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.experience .box-container .box{
+    height: 6rem;
+    width:10rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.experience .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer{
+    color: white;
+    background:#3c6382 ;
+    padding: 2rem;
+    grid-area:footer ;
+}
+
+h2{
+     margin-bottom:1rem ;
+}
+
+.profile p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.profile a{
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background-color: #0a3d63;
+    color: white;
+}
+
+.skills div{
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.skills div progress[value]{
+    width: 100%;
+    height: 1rem;
+}
+
+.education h2{
+    letter-spacing:0.1rem ;
+}
+
+.education p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.education a{
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.aboutMe ul{
+    margin: 1rem 0;
+    padding: 0.3rem 1rem;
+}
+
+.aboutMe ul li{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact{
+    margin-right:0.2rem ;
+}
+
+.contact p{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.experience p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    
+}
+
+
+
+footer i{
+    background: white;
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem 0.2rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+footer i:hover{
+    background: #0a3d62;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:770px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.6fr 1fr
+                        0.6fr 0.5fr 0.8fr 0.1fr;
+        grid-template-areas: "profile"
+        "skills"
+        "education"
+        "language"
+        "contact"
+        "experience"
+        "footer"
+        ;
+    }
+    header{
+        text-align:center;
+        
+    }
+}

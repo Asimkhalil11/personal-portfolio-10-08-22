@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+    <link rel="stylesheet" href="profitshare.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="form-box">
+            <h1>Total Profit</h1>
+            <input type="number" id="totalAmount">
+            <br>
+            
+            <button onclick="
+            let totalProfit = document.getElementById('totalAmount').value;
+            let sahreOfAli = totalProfit*35/100;
+            let sahreOfUsman = totalProfit*65/100;
+                document.getElementById('heading').innerText = sahreOfAli;
+                document.getElementById('heading1').innerText = sahreOfUsman;">
+                Click Here</button>
+                <h2>Share of Ali</h2>
+            <h3 id="heading">0</h3>
+            <h2>Share of Usman</h2>
+            <h3 id="heading1">0</h3>
+
+            
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

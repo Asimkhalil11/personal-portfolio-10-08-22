@@ -1,0 +1,70 @@
+h1{
+    font-size:60px; color: white; text-align:center;
+}
+.hmahad{
+    font-size:25px; color: #283747; 
+    text-align:center; 
+}
+.pmahad{
+    font-size:18px; color: #283747; 
+    text-align:left; text-align: justify;
+    margin-left: 15px; margin-right: 10px;
+}
+
+.buttonmargin{
+    margin-left:200px;
+}
+
+.hb{
+    color:white; font-size: 15px;
+    border-radius: 12px; background-color: #283747;
+    border-color: white; margin-left: 5px;
+    width: 110px; height: 40px;
+    text-decoration: none;
+}
+
+
+}
+
+.hb:hover{
+    color:white; font-size: 22px;
+    border-radius: 12px; background-color: #283747;
+    border-color: white; margin-left: 5px;
+    width: 140px; height: 50px;
+}
+
+.picmar{ margin-top: 25px;
+        margin-left: 25px;
+        border-radius: 10px;
+}
+
+.box2{
+    height:550px; border-radius: 20px;
+}
+
+.moreb{
+    color:white; font-size: 15px;
+    border-radius: 12px; background-color: #283747;
+    border-color: white;
+    width: 110px; height: 40px;
+    text-decoration: none;
+    
+
+}
+
+
+.morem{
+    margin-left: 80px;}
+
+    .picbuttmar{
+        margin-left: 400px;
+        margin-top: 25px;
+        height="100٪" width="100٪"
+    
+    }
+    
+
+    .butexh{
+        font-size:40px; color:white; 
+    text-align:center;
+    }
